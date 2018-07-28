@@ -1,4 +1,6 @@
-﻿@page
+﻿@inject IConfiguration config
+@using Microsoft.Extensions.Configuration;
+@page
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -18,7 +20,7 @@
         <div class="item active">
             <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
             <div class="carousel-caption" role="option">
-                ***<h1>@Environment.GetEnvironmentVariable("APPSETTING_KeyName", EnvironmentVariableTarget.Process)</h1>***
+                <h1>@(config.GetValue<string>("SlotName"))</h1>>
             </div>
         </div>
         <div class="item">
