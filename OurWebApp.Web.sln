@@ -5,10 +5,6 @@ VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OurWebApp.Web", "OurWebApp.Web\OurWebApp.Web.csproj", "{0AFA36FC-F625-42B9-B55C-DE078494765A}"
 EndProject
-Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "BrandNewResourceGroup", "BrandNewResourceGroup\BrandNewResourceGroup.deployproj", "{F42A3B47-233D-4412-B8E9-3446B5695C9C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpARMDeployer", "CSharpARMDeployer\CSharpARMDeployer.csproj", "{AB670789-AB92-41DF-89AA-2357828BEBF4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{0AFA36FC-F625-42B9-B55C-DE078494765A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AFA36FC-F625-42B9-B55C-DE078494765A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AFA36FC-F625-42B9-B55C-DE078494765A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F42A3B47-233D-4412-B8E9-3446B5695C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F42A3B47-233D-4412-B8E9-3446B5695C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F42A3B47-233D-4412-B8E9-3446B5695C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F42A3B47-233D-4412-B8E9-3446B5695C9C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AB670789-AB92-41DF-89AA-2357828BEBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB670789-AB92-41DF-89AA-2357828BEBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB670789-AB92-41DF-89AA-2357828BEBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB670789-AB92-41DF-89AA-2357828BEBF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
