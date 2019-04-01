@@ -1,6 +1,6 @@
-﻿@inject IConfiguration config
+﻿@page
+@inject IConfiguration config
 @using Microsoft.Extensions.Configuration;
-@page
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -20,7 +20,7 @@
         <div class="item active">
             <img src="~/images/banner1.svg" alt="ASP.NET" class="img-responsive" />
             <div class="carousel-caption" role="option">
-                
+
             </div>
         </div>
         <div class="item">
@@ -68,6 +68,7 @@
 </div>
 
 <div class="row">
+    <h1>@(config.GetValue<string>("slotName"))</h1>
     <div class="col-md-3">
         <h2>Application uses</h2>
         <ul>
