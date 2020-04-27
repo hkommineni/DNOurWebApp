@@ -32,13 +32,8 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-- task: AzureRmWebAppDeployment@4
+- task: PublishBuildArtifacts@1
   inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'WebAppSubscription(4)(39987407-8ba4-4b60-aab2-55843f7f135d)'
-    appType: 'webApp'
-    WebAppName: 'CredentialsAppDeploy'
-    deployToSlotOrASE: true
-    ResourceGroupName: 'CredentialsApp'
-    SlotName: 'Staging'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
